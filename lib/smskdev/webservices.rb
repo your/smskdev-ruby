@@ -59,10 +59,10 @@ module Smskdev
 
     def _validate_args(args, op = nil)
       raise ArgumentError unless !op.nil?
-    	unless !args.nil? && !args.empty? && op.is_a?(Hash) &&
-    	  !op[:mandatory].map{ |mandatory_param| args[mandatory_param.to_sym] }.include?(nil)
-    	  raise ArgumentError
-    	end
+      unless !args.nil? && !args.empty? && op.is_a?(Hash) &&
+        !op[:mandatory].map{ |mandatory_param| args[mandatory_param.to_sym] }.include?(nil)
+        raise ArgumentError
+      end
     end
 
     def _get_response(url)
@@ -72,7 +72,7 @@ module Smskdev
     end
 
     def _compose_url(op_params, additional_params)
-    	[_base_params, op_params, additional_params].join('&')
+      [_base_params, op_params, additional_params].join('&')
     end
 
     def _auth_params
@@ -80,7 +80,7 @@ module Smskdev
     end
 
     def _app_params
-    	"app=ws"
+      "app=ws"
     end
 
     def _op_params(op)
@@ -98,7 +98,7 @@ module Smskdev
     end
 
     def _base_url
-    	@url
+      @url
     end
   end
 
