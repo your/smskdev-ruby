@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'vcr_helper'
 require 'smskdev'
 
 describe Smskdev do
