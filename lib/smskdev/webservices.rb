@@ -13,7 +13,7 @@ module Smskdev
       @p   = password
       @h   = token
 
-      if ((@h.nil? || @h.empty?) && (@u.nil? || @u.empty? || @p.nil? || @p.empty?))
+      if (@h.nil? && @u.nil? && @p.nil?) || (!@h.nil? && @u.nil?)
         raise ArgumentError, 'Username and password or token required'
       end
 
