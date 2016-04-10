@@ -25,7 +25,7 @@ module Smskdev
     end
 
     def sms_delivery_status(smslog_id: nil)
-      status(smslog_id: smslog_id)
+      status(smslog_id: smslog_id).data[0]['status'] unless @response.nil? || @response.data.nil?
     end
 
     OPERATIONS.each do |operation|
