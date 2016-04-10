@@ -16,7 +16,7 @@ module Smskdev
             when 'to'        then arg.to_i
             when 'from'      then arg.to_i
             when 'type'      then 'text'
-            when 'unicode'   then 1
+            when 'unicode'   then arg ? '1' : '0'
             when 'queue'     then arg.strip
             when 'smslog_id' then arg.to_i
           end
