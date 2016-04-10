@@ -14,7 +14,7 @@ smskdev.it unofficial advanced REST API wrapper (incomplete)
 ### Send SMS
 
 ```ruby
-> s.send(to: '391111111111', msg: 'Welcome to my site!')
+> s.send_sms(to: '391111111111', msg: 'Welcome to my site!')
 ```
 
 ### Inspect response
