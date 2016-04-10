@@ -9,12 +9,14 @@ smskdev.it unofficial advanced REST API wrapper (incomplete)
 
 ```ruby
 > s = Smskdev::Webservices.new(username: 'test', password: 'test')
+> s = Smskdev::Webservices.new(username: 'test', token: 'test')
 ```
 
 ### Send SMS
 
 ```ruby
 > s.send_sms(to: '391111111111', msg: 'Welcome to my site!')
+> s.send_sms(to: '391111111111', msg: 'Welcome to my site!', type: 'text', unicode: true)
 ```
 
 ### Inspect response
@@ -38,9 +40,8 @@ smskdev.it unofficial advanced REST API wrapper (incomplete)
 * `sms_failed`
 
 
-### More to come
+### More to come!
 
-...
 
 ## License: MIT
 
