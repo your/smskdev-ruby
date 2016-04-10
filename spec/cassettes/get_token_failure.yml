@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.smskdev.it/playsms/index.php?app=ws&op=get_token&p=INVALID_PASS&u=INVALID_USER
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.smskdev.it
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Tue, 18 Dec 2029 21:09:43 GMT
+      Cache-Control:
+      - max-age=432000000
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      X-Powered-By:
+      - PHP/5.4.45-0+deb7u2
+      Set-Cookie:
+      - PHPSESSID=of5ci24br8dg94h4270943g6d5; path=/
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sun, 10 Apr 2016 21:09:43 GMT
+      Server:
+      - lighttpd/1.4.31
+    body:
+      encoding: UTF-8
+      string: '{"status":"ERR","error":"100","error_string":"authentication failed","timestamp":1460322583}'
+    http_version: 
+  recorded_at: Sun, 10 Apr 2016 21:09:43 GMT
+recorded_with: VCR 2.9.3

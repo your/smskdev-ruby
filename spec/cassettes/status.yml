@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.smskdev.it/playsms/index.php?app=ws&h=VALID_TOKEN&op=ds&smslog_id=1770487&u=VALID_USER
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.smskdev.it
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      - Tue, 18 Dec 2029 22:01:11 GMT
+      Cache-Control:
+      - max-age=432000000
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      X-Powered-By:
+      - PHP/5.4.45-0+deb7u2
+      Set-Cookie:
+      - PHPSESSID=e0a9fvc4mve8rtnjn12vbjbe96; path=/
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sun, 10 Apr 2016 22:01:11 GMT
+      Server:
+      - lighttpd/1.4.31
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"smslog_id":"1770487","src":"God","dst":"393271010101","msg":"Test
+        message","dt":"2016-04-10 22:45:04","update":"2016-04-10 22:45:06","status":"0"}],"error_string":null,"timestamp":1460325671}'
+    http_version: 
+  recorded_at: Sun, 10 Apr 2016 22:01:11 GMT
+recorded_with: VCR 2.9.3
