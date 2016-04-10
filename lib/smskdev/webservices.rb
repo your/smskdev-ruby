@@ -3,7 +3,7 @@ require 'json'
 module Smskdev
   class Webservices
 
-    attr_reader :response
+    attr_reader :response, :u, :p, :h
 
     include Sanitizer
 
